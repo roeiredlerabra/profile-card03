@@ -247,64 +247,92 @@
             color: white;
         }
 
-        @media (max-width: 768px) {
-            body {
-                padding: 0.5rem;
-            }
+       @media (max-width: 768px) {
+    body {
+        padding: 0.5rem;
+    }
 
-            .container {
-                padding: 0;
-            }
+    .container {
+        padding: 0;
+    }
 
-            .card {
-                border-radius: 1rem;
-            }
+    .card {
+        border-radius: 1rem;
+    }
 
-            .background {
-                min-height: 10rem;
-            }
-            .background img {
-                max-height: 200px;  /* Limit the image height on mobile */
-            }
-            .content {
-                padding: 0.75rem;
-            }
+    .background {
+        min-height: 10rem;
+    }
 
-            .chips {
-                gap: 0.5rem;
-            }
+    .background img {
+        max-height: 200px; /* Limit the image height on mobile */
+    }
 
-            .action-buttons a {
-                padding: 0.5rem;
-                font-size: 1rem;
-            }
-        }
+    .content {
+        padding: 0.75rem;
+    }
 
-        @media (max-width: 480px) {
-            .testimonial {
-                display: none;
-            }
+    .chips {
+        gap: 0.5rem;
+    }
 
-            .icon-item i {
-                font-size: 1.0rem;
-                margin-bottom: 0.3rem;
-            }
+    .action-buttons a {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
 
-            .icon-item span {
-                font-size: 0.8rem;
-            }
-            .gallery {
+    .gallery {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0.5rem;
+        justify-content: center;
+    }
+
+    .icon-item {
+        padding: 0.5rem;
+    }
+
+    .icon-item i {
+        font-size: 1.25rem;
+    }
+
+    .icon-item span {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .testimonial {
+        display: none;
+    }
+
+    .icon-item {
+        height: 50px;
+        padding: 0.25rem; /* Adjust padding if necessary */
+    }
+
+    .icon-item i {
+        font-size: 1.0rem;
+        margin-bottom: 0.3rem;
+    }
+
+    .icon-item span {
+        font-size: 0.8rem;
+    }
+
+    .gallery {
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(4, auto);
     }
-    .background {
-                min-height: 8rem;  /* Even smaller height for very small devices */
-            }
 
-            .background img {
-                max-height: 150px;  /* Further limit the image height on very small devices */
-            }
-        }
+    .background {
+        min-height: 8rem;  /* Even smaller height for very small devices */
+    }
+
+    .background img {
+        max-height: 150px;  /* Further limit the image height on very small devices */
+    }
+}
+
 
 </style>
 <body>
